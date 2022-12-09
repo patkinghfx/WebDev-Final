@@ -1,0 +1,315 @@
+body {
+    margin:0%;
+  }
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: #5C2E7E !important;
+    border:none;
+}
+
+body, html {
+    height: 100%;
+  }
+  
+.parallax {
+    background-image: url(background.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  .parallax_layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .parallax_group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+  }
+
+  .parallax_layer-base {
+    -webkit-transform: translateZ(1px);
+    transform: translateZ(1px);
+    z-index: 1;
+  }
+  .parallax_layer-back {
+    transform: translateZ(-1px) scale(1);
+  }
+
+  .parallax_layer-deep {
+    -webkit-transform: translateZ(-5px) scale(3);
+    transform: translateZ(-5px) scale(3);
+    z-index: 2;
+  }
+
+  .intro_header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color:#181D31;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .intro_text {
+    padding-top: 200px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color:#181D31;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .aspirations_header {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    color:#181D31;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .aspirations_text {
+    padding-top: 180px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color:#181D31;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .achievements_header {
+    font-size: 3rem;
+    text-align: center;
+    color:#FFFCFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .achievements_text {
+    padding-top: 250px;
+    font-size: 1.5rem;
+    text-align: center;
+    color:#FFFCFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .contact_header {
+    font-size: 3rem;
+    text-align: center;
+    color:#FFFCFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .contact_text {
+    padding-top: 250px;
+    font-size: 1.5rem;
+    text-align: center;
+    color:#FFFCFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+    .title {
+    text-align: center;
+    color: #247BA0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  #group1 {
+    z-index: 5;
+  }
+  #group1 .parallax_layer-base {
+    opacity: 1;
+    font-size: xx-large;
+  }
+
+  #group2 {
+    z-index: 4;
+  }
+
+  #group2 .parallax_layer-back {
+    background: rgba(92, 46, 126, 0.5);
+  }
+
+  #group3 {
+    z-index: 4;
+  }
+
+  #group3 .parallax_layer-base {
+    background: #181D31;
+    opacity: 1;
+  }
+
+  #group4 {
+    z-index: 10;
+  }
+
+  #group4 .parallax_layer-deep {
+    background: rgba(0, 0, 0, 0);
+    opacity: 1;
+  }
+
+  #group5 {
+    z-index: 3;
+  }
+
+  #group5 .parallax_layer-base {
+    background: #181D31;
+    opacity: 1;
+  }
+
+  #group6 {
+    z-index: 2;
+  }
+
+  #group6 .parallax_layer-back {
+    opacity: 1;
+  }
+  
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+  
+@media screen and (max-width: 576px) {
+    .intro_header {
+        font-size: 2rem;
+    }
+    .aspirations_header {
+        font-size: 2.5rem;
+        padding-bottom: 100px;
+    }
+    .aspirations_text {
+        font-size: 1rem;
+    }
+    .achievements_header {
+        font-size: 2rem;
+        padding-bottom: 100px;
+    }
+    .achievements_text {
+        font-size: 1rem;
+    }
+    .contact_header {
+        font-size: 2.5rem;
+        padding-bottom: 100px;
+    }
+    .contact_text {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .aspirations_header {
+        font-size: 2.5rem;
+        padding-bottom: 100px;
+    }
+    .aspirations_text {
+        font-size: 1.3rem;
+    }
+    .achievements_header {
+        font-size: 2.5rem;
+        padding-bottom: 80px;
+    }
+    .achievements_text {
+        font-size: 1rem;
+    }
+    .contact_header {
+        font-size: 2.5rem;
+        padding-bottom: 100px;
+    }
+    .contact_text {
+        font-size: 1.3rem;
+    }   
+}
+
+@media (max-width: 992px) {
+    .aspirations_header {
+        font-size: 3rem;
+        padding-bottom: 100px;
+    }
+    .achievements_header {
+        font-size: 2.5rem;
+        padding-bottom: 80px;
+    }
+    .achievements_text {
+        font-size: 1.5rem;
+    } 
+    .contact_header {
+        font-size: 2.5rem;
+        padding-bottom: 80px;
+    }
+    .contact_text {
+        font-size: 1.5rem;
+    }   
+}
+
+@media (min-width: 1200px) {
+    .intro_text {
+        font-size: 2rem;
+    }
+    .aspirations_text {
+        font-size: 1.5rem;
+    }
+    .achievements_header {
+        font-size: 2.5rem;
+        padding-bottom: 60px;
+    }
+    .achievements_text {
+    font-size: 2rem;
+    } 
+    .contact_header {
+        font-size: 2rem;
+    } 
+    .contact_text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1400px) {
+}
